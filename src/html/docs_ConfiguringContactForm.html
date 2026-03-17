@@ -150,49 +150,7 @@
             </div>
         </nav>
     </header>
-    <section class="page-docs-content flex mt-[180px] flex-col md:flex-row">
-        <div class="w-full lg:w-[350px] md:h-[290px] md:h-[450px] lg:h-[310px] z-[0] content-left shadow-[10px_10px_20px_16px_rgba(0,0,0,0.08)] rounded-[20px] pl-[20px] pr-[70px] py-[25px] dark:border dark:border-[#2d2f40] dark:bg-[#1c2136] md:sticky md:top-0">
-            <ul class="gap-[10px] flex flex-col">
-                <li class="text-[17px] text-gray-500 dark:bg-[#181c31] p-2"><a class="dark:text-white" href="./docs_BootstrapsTemplateGuide.html">Bootstraps Template Guide</a> </li>
-                <li class="text-[17px] p-2 text-black dark:bg-[#2c3149] dark:text-white bg-[#eeeeee]"><a class="dark:text-white" href="./docs_ConfiguringContactForm.html">Configuring Contact Form</a> </li>
-                <li class="text-[17px] text-gray-500 dark:bg-[#181c31] p-2"><a class="dark:text-white" href="./docs_StyleGuide.html">Style Guide</a> </li>
-                <li class="text-[17px] text-gray-500 dark:bg-[#181c31] p-2"><a class="dark:text-white" href="./docs_UsingTailwindComponents.html">Using Tailwind Components</a> </li>
-                <li class="text-[17px] text-gray-500 dark:bg-[#181c31] p-2"><a class="dark:text-white" href="./docs_UsingTailwindTemplate.html">Using Tailwind Template</a> </li>
-            </ul>
-        </div>
-        <div class="z-[1] md:w-[935px] content-right content-left shadow-[2px_2px_10px_6px_rgba(0,0,0,0.1)] rounded-[20px] pl-[50px] pr-[30px] py-[25px] mt-10 md:mt-[0px] md:ml-[30px] dark:border dark:border-[#2d2f40] dark:bg-[#1c2136]">
-            <div class="text">
-                <h1 class="text-4xl font-[500] mb-[20px] dark:text-white">Introduction</h1>
-                <p class="mb-[30px] text-[17px] text-gray-700 dark:text-[#757684]">This part of the documentation shows you how you can configure a contact form with Tailwind CSS Templates and Bootstrap Templates.</p>
-
-                <h1 class="text-4xl font-[500] mb-[20px] dark:text-white">Using PHP Contact Form:</h1>
-                <p class="mb-[30px] text-[17px] text-gray-700 dark:text-[#757684]">For Bootstrap templates, we used to provide a PHP script that only can be used for PHP servers,</p>
-                <p class="mb-[35px] text-[17px] text-gray-700 dark:text-[#757684]">Yif phpmailer function is up and running smoothly.</p>
-                <p class="mb-[30px] text-[17px] text-gray-700 dark:text-[#757684]">Here is how it works: Just <span class="dark:text-[#757684] text-[17px] text-blue-500 font-bold">replace the email address with your own</span> from</p>
-                <p class="mb-[10px] text-[17px] text-gray-500 bg-[#2d2f40] block rounded-[10px] dark:text-[#999a98] p-3">assets->php>contact.php</p>
-                <p class="mb-[35px] text-[17px] text-gray-700 dark:text-[#757684]">This procedure should work if everything is configured properly on the server side</p>
-
-                <h1 class="text-4xl font-[500] mb-[20px] dark:text-white">Using FormBold: A universal Form API (Recommended):</h1>
-                <p class="mb-[30px] text-[17px] text-gray-700 dark:text-[#757684]">FormBold is a powerful form API and serverless form backend that works with all hosting, SSG, and frameworks.</p>
-                <p class="mb-[30px] text-[17px] text-gray-700 dark:text-[#757684]">We highly recommend, using a serverless end-point (FormBold) to make contact form dynamic. Since most users nowadays don't use PHP servers.</p>
-                <p class="mb-[30px] text-[17px] text-gray-700 dark:text-[#757684]">Here’s how to connect FormBold API with your contact form:</p>
-                <p class="mb-[30px] text-[17px] text-gray-700 dark:text-[#757684]"><span class="text-[17px] text-blue-500 dark:text-[#757684] font-bold">Step#1:</span> Create an account on FormBold and create a Form.</p>
-                <p class="mb-[30px] text-[17px] text-gray-700 dark:text-[#757684]"><span class="text-[17px] text-blue-500 dark:text-[#757684] font-bold">Step#2:</span> Integrate the API into your contact Form using this code. Make sure your Form’s method is set to <span class="text-[17px] text-blue-500 dark:text-[#757684] font-bold">POST</span></p>
-                <p class="mb-[30px] text-[17px] text-gray-500 bg-[#2d2f40] block rounded-[20px] dark:text-[#999a98] p-5">
-                    &lt;form action="https://formbold.com/s/unique_form_id" method="POST"&gt; <br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;  &lt;input type="email" placeholder="email" name="email" /&gt; <br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;  &lt;input type="text" placeholder="subject" name="subject" /&gt; <br>
-                      &nbsp;&nbsp;&nbsp;&nbsp;  &lt;textarea name="message" placeholder="message" /&gt;&lt;/textarea&gt; <br><br>   
-                      &nbsp;&nbsp;&nbsp;&nbsp;  &lt;button type="submit"&gt;&lt;button&gt; <br>
-                      
-                    &lt/form&gt;
-                </p>
-                <p class="mb-[30px] text-[17px] text-gray-700 dark:text-[#757684]">You’ll find the unique_form_id in the FormBold dashboard under <span class="dark:text-[#757684] text-[17px] text-blue-500 font-bold">**Settings>Integration.**</span></p>
-                <p class="mb-[30px] text-[17px] text-gray-700 dark:text-[#757684]">Copy and paste it to the <span class="dark:text-[#757684] text-[17px] text-blue-500 font-bold">action</span> attribute.</p>
-                <p class="mb-[30px] text-[17px] text-gray-700 dark:text-[#757684]">This is just the basic setup, FormBold has a lot of great features like re-captcha for spam protection, and the ability to integrate it with other apps like Webhook, Slack, Notion, and GoogleSheet. Learn more about FormBold here.</p>
-            </div>
-        </div>
-    </section>
+   
     <footer class=" border-t border-gray-300 dark:border-gray-700 mt-100">
         <div class="px-[4%] pt-20 w-full bg-white dark:bg-[#1c2136]">
             <div class="grid grid-cols-1  gap-5 lg:py-8 lg:grid-cols-5">
