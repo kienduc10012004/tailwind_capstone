@@ -4,150 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <title>Next.js Starter Template for SaaS Startups - Solid SaaS Boilerplate</title> 
     <link rel="stylesheet" href="../css/output.css">
+    <link rel="icon" href="../img/favicon.ico">
+    <!-- link cdn font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- slick -->
+    <link rel="stylesheet" href="../lib/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../lib/slick/slick.css" />
 
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="bg-white p-0 m-0 dark:bg-[#181C31] font-[Inter,sans-serif] overflow-x-hidden">
     <header id="header"
-        class=" bg-white dark:bg-[#181C31] py-1 lg:pt-4 fixed text-gray-500 w-full lg:justify-around transition-all duration-300 z-40 top-0 dark:border-gray-600">
-        <nav>
-            <div
-                class="lg:mx-12 flex flex-wrap lg:grid lg:grid-cols-3 lg:items-center items-center justify-between relative mx-auto p-4">
-                <a href="../html/index.html" class="flex items-center space-x-3  lg:m-0  rtl:space-x-reverse">
-                    <img src="../img/logo-light.svg" class="lg:h-7.5 dark:hidden" alt="Flowbite Logo">
-                    <img src="../img/logo-dark.svg" class="lg:h-7.5 hidden dark:block" alt="Flowbite Logo">
+        class=" bg-white  dark:bg-[#181C31] py-1 xl:pt-4 fixed text-gray-500 w-full xl:justify-around transition-all duration-300 z-40 top-0 dark:border-gray-600">
+        <nav class="mx-auto max-w-[1560px]  lg:px-0 xl:px-8">
+            <div class="flex xl:gird xl:grid-cols-3 items-center justify-between relative mx-auto p-4">
+                <a href="../html/index.html" class=" items-center space-x-3 xl:m-0  rtl:space-x-reverse">
+                    <img src="../img/logo-light.svg" class="h-7.5 dark:hidden" alt="Flowbite Logo">
+                    <img src="../img/logo-dark.svg" class="h-7.5 hidden dark:block" alt="Flowbite Logo">
                 </a>
-                <div class="items-center justify-center lg:grid absolute left-0 top-16 hidden w-full lg:static  lg:w-auto lg:order-1 px-3 pt-1 lg:p-0 dark:bg-[#181C31] lg:dark:bg-transparent lg:bg-transparent bg-[#FAFAFB] border-b border-gray-200 lg:border-0 lg:dark:border-0 dark:border-gray-900"
+                <div class="items-center  xl:static  absolute left-0 top-16 hidden w-full xl:flex xl:w-auto xl:order-1 px-3 pt-1 xl:p-0 dark:bg-[#181C31] xl:dark:bg-transparent xl:bg-transparent lg:bg-[#FAFAFB] border-b border-gray-200  dark:border-gray-900 xl:border-0 bg-gray-100"
                     id="navbar-sticky">
-                    <div
-                        class="lg:relative mb-4 lg:mb-0 lg:h-10 lg:w-210 rounded-sm dark:bg-[#1c2136] lg:dark:bg-transparent shadow-lg lg:shadow-none">
-                        <ul
-                            class=" lg:items-center lg:absolute lg:left-0 lg:bottom-2 gap-1.5
-                        flex flex-col p-5 lg:p-0 font-normal rounded-lg lg:space-x-10 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0">
-                            <li>
-                                <a href="../html/index.html" class="block py-2 px-3 text-blue-700 rounded-sm  lg:p-0"
-                                    aria-current="page">Home</a>
-                            </li>
-                            <li>
-                                <a href="../html/index.html#features"
-                                    class="block py-2 px-3 text-gray-400 rounded-sm hover:text-blue-700 lg:p-0">Features</a>
-                            </li>
-                            <li>
-                                <a href="../html/blog.html"
-                                    class="block py-2 px-3 text-gray-400 rounded-sm hover:text-blue-700 lg:p-0">Blog</a>
-                            </li>
-                            <li>
-                                <a href="../html/docs.html"
-                                    class="block py-2 px-3 text-gray-400 rounded-sm hover:text-blue-700 lg:p-0">Docs</a>
-                            </li>
-                            <li class="relative">
-                                <button
-                                    class="flex peer items-center text-gray-400  cursor-pointer lg:justify-between lg:w-full py-2 px-3 rounded hover:text-blue-700 text-heading w-25 lg:border-0 lg:hover:text-fg-brand lg:p-0">
-                                    Pages
-                                    <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m19 9-7 7-7-7" />
-                                    </svg>
-                                </button>
-                                <!-- Dropdown menu -->
-                                <div
-                                    class="z-10 left-3 lg:left-0 duration-500 absolute px-3 py-2 shadow-lg lg:mt-15 bg-white dark:bg-[#1c2136] dark:border-gray-700 border border-gray-200 rounded-sm transition-all 
-                                invisible peer-hover:visible lg:peer-hover:mt-5 lg:peer-hover:opacity-100 lg:opacity-0 lg:hover:opacity-100 hover:visible lg:hover:mt-5 w-110  lg:w-60
-                                lg:before:content-[''] lg:before:h-3 lg:before:w-3 lg:before:border-l lg:before:border-t  lg:before:bg-white lg:before:absolute lg:before:top-[-7px] lg:before:rotate-45 lg:before:border-gray-300 lg:before:left-10 lg:dark:before:bg-[#1c2136] lg:dark:before:border-gray-700">
-
-                                    <ul class="p-2 grid gap-y-1 text-sm text-body font-medium ">
-                                        <li>
-                                            <a href="../html/blog.html"
-                                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded text-gray-400 text-base font-normal hover:text-blue-700">Blog
-                                                Gird</a>
-                                        </li>
-                                        <li>
-                                            <a href="../html/sign_in.html"
-                                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded text-gray-400 text-base font-normal hover:text-blue-400">Sign
-                                                In</a>
-                                        </li>
-                                        <li>
-                                            <a href="../html/sign_up.html"
-                                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded text-gray-400 text-base font-normal hover:text-blue-400">Sign
-                                                Up</a>
-                                        </li>
-                                        <li>
-                                            <a href="../html/docs.html"
-                                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded text-gray-400 text-base font-normal text hover:text-blue-400">Docs</a>
-                                        </li>
-                                        <li>
-                                            <a href="../html/support.html"
-                                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded text-gray-400 text-base font-normal hover:text-blue-400">Support</a>
-                                        </li>
-                                        <li>
-                                            <a href="../html/error.html"
-                                                class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded text-gray-400 text-base font-normal hover:text-blue-400">404</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="../html/support.html"
-                                    class="block py-2 px-3 text-gray-400 rounded-sm hover:text-blue-700 lg:p-0">Support</a>
-                            </li>
-                        </ul>
-                        <div class="lg:relative lg:w-280 px-8 lg:px-0 pb-7 shadow-lg lg:pb-0 lg:shadow-none">
+                    <ul
+                        class=" xl:items-center  gap-1.5 mr-40 bg dark:bg-[#1c2136] lg:bg-transparent lg:dark:bg-transparent 
+                        w-[100%] bg-white
+                        flex flex-col p-5 xl:py-0  font-normal rounded-t-lg xl:space-x-10 rtl:space-x-reverse xl:flex-row  xl:border-0">
+                        <li>
+                            <a href="../html/index.html" class="block py-2 px-3 text-blue-700 rounded-sm  xl:p-0"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="../html/index.html#features"
+                                class="block py-2 px-3 text-gray-400 rounded-sm hover:text-blue-700 xl:p-0">Features</a>
+                        </li>
+                        <li>
+                            <a href="../html/blog.html"
+                                class="block py-2 px-3 text-gray-400 rounded-sm hover:text-blue-700 xl:p-0">Blog</a>
+                        </li>
+                        <li>
+                            <a href="../html/docs.html"
+                                class="block py-2 px-3 text-gray-400 rounded-sm hover:text-blue-700 xl:p-0">Docs</a>
+                        </li>
+                        <li class="relative">
+                            <button
+                                class="flex peer items-center text-gray-400  cursor-pointer xl:justify-between xl:w-full py-2 px-3 rounded hover:text-blue-700 text-heading w-25 xl:border-0 xl:hover:text-fg-brand xl:p-0">
+                                Pages
+                                <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 9-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <!-- Dropdown menu -->
                             <div
-                                class="flex rtl:space-x-reverse lg:mb-1 lg:right-0  lg:absolute lg:justify-around items-center justify-between gap-6">
-                                <div class="lg:order-2 flex gap-6 items-center">
-                                    <a href="../html/sign_in.html"
-                                        class=" lg:mt-0 inline-block lg:whitespace-nowrap
-                                           text-gray-400 rounded-sm hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700  lg:dark:hover:text-blue-600  dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Sign
-                                        In</a>
-                                    <a href="../html/sign_up.html">
-                                        <button type="button"
-                                            class="lg:whitespace-nowrap text-white text-base cursor-pointer bg-blue-600 hover:bg-blue-700 focus:outline-none dark:focus:outline-none rounded-[25px] font-normal py-3 px-8 text-center dark:bg-blue-600 dark:hover:bg-blue-700 ">
-                                            Sign Up
-                                        </button>
-                                    </a>
-                                </div>
-                                <div class="lg:order-1 flex justify-items-center gap-4">
-                                    <button type="submit"
-                                        class="hidden lg:block shrink-0 lg:mt-0.5  text-gray-500 bg-brand hover:bg-brand-strong  rounded-base w-10 h-10 focus:outline-none">
-                                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                            width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
-                                                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
-                                        </svg>
-                                        <span class="sr-only">Icon description</span>
-                                    </button>
-                                    <button id="theme-toggle" type="button"
-                                        class="text-gray-400 dark:text-gray-400  focus:outline-none  rounded-lg text-sm ">
-                                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z">
-                                            </path>
-                                        </svg>
-                                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor"
-                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                                                fill-rule="evenodd" clip-rule="evenodd"></path>
-                                        </svg>
-                                    </button>
-                                </div>
+                                class="z-10 left-3 xl:left-0 duration-500 absolute px-3 py-2 shadow-xl xl:mt-15 bg-white dark:bg-[#1c2136] dark:border-gray-700 border border-gray-200 rounded-sm transition-all peer-focus:visible peer-focus:opacity-100 
+                                invisible xl:peer-hover:visible xl:peer-hover:mt-5 xl:peer-hover:opacity-100 xl:opacity-0 xl:hover:opacity-100 hover:visible xl:hover:mt-5 w-110  xl:w-60
+                                xl:before:content-[''] xl:before:h-3 xl:before:w-3 xl:before:border-l xl:before:border-t  xl:before:bg-white xl:before:absolute xl:before:top-[-7px] xl:before:rotate-45 xl:before:border-gray-300 xl:before:left-10 xl:dark:before:bg-[#1c2136] xl:dark:before:border-gray-700">
 
-
+                                <ul class="p-2 grid gap-y-1 text-sm text-body font-medium ">
+                                    <li>
+                                        <a href="../html/blog.html"
+                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded text-gray-400 text-base font-normal hover:text-blue-700">Blog
+                                            Gird</a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/sign_in.html"
+                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded text-gray-400 text-base font-normal hover:text-blue-400">Sign
+                                            In</a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/sign_up.html"
+                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded text-gray-400 text-base font-normal hover:text-blue-400">Sign
+                                            Up</a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/docs.html"
+                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded text-gray-400 text-base font-normal text hover:text-blue-400">Docs</a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/support.html"
+                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded text-gray-400 text-base font-normal hover:text-blue-400">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="../html/error.html"
+                                            class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded text-gray-400 text-base font-normal hover:text-blue-400">404</a>
+                                    </li>
+                                </ul>
                             </div>
+                        </li>
+                        <li>
+                            <a href="../html/support.html"
+                                class="block py-2 px-3 text-gray-400 rounded-sm hover:text-blue-700 xl:p-0">Support</a>
+                        </li>
+                    </ul>
+                    <div
+                        class="flex rtl:space-x-reverse rounded-b-lg mb-5 lg:mb-0 xl:justify-around bg-white items-center justify-between gap-6  pb-5 lg:pb-0 dark:bg-[#1c2136] lg:dark:bg-transparent px-8 lg:px-0 lg:bg-transparent ">
+                        <div class="xl:order-2 flex gap-6 items-center">
+                            <a href="../html/sign_in.html"
+                                class=" xl:mt-0 inline-block xl:whitespace-nowrap
+                                           text-gray-400 rounded-sm hover:bg-gray-100 xl:hover:bg-transparent xl:hover:text-blue-700  xl:dark:hover:text-blue-600  dark:hover:bg-gray-700 dark:hover:text-white xl:dark:hover:bg-transparent dark:border-gray-700">Sign
+                                In</a>
+                            <a href="../html/sign_up.html">
+                                <button type="button"
+                                    class="xl:whitespace-nowrap text-white text-base cursor-pointer bg-blue-600 hover:bg-blue-700 focus:outline-none dark:focus:outline-none rounded-[25px] font-normal py-3 px-8 text-center dark:bg-blue-600 dark:hover:bg-blue-700 ">
+                                    Sign Up
+                                </button>
+                            </a>
+                        </div>
+                        <div class="xl:order-1 flex justify-items-center gap-4">
+                            <button type="submit"
+                                class="hidden xl:block shrink-0 xl:mt-0.5  text-gray-500 bg-brand hover:bg-brand-strong  rounded-base w-10 h-10 focus:outline-none">
+                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                        d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+                                </svg>
+                                <span class="sr-only">Icon description</span>
+                            </button>
+                            <button id="theme-toggle" type="button"
+                                class="text-gray-400 dark:text-gray-400  focus:outline-none  rounded-xl text-sm ">
+                                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z">
+                                    </path>
+                                </svg>
+                                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                        fill-rule="evenodd" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <button data-collapse-toggle="navbar-sticky" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-xl xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -161,18 +159,18 @@
     </header>
     <main class="mt-[120px]">
         <!-- huy -->
-        <section class="carousel py-20">
-            <div class="grid lg:grid-cols-2 mx-[4%]">
+        <section class="carousel py-20 max-w-[1560px] mx-auto">
+            <div class="grid xl:grid-cols-2 mx-3 xl:mx-8">
                 <div class="mt-5 ">
-                    <p class="text-lg font-medium mb-2 text-black dark:text-white">🔥 Solid - A Complete SaaS Starter
+                    <p class="text-xl font-medium mb-2 text-black dark:text-white">🔥 Solid - A Complete SaaS Starter
                         Template for SaaS</p>
-                    <h1 class="lg:text-[44px]  text-[30px] text-nowrap p-0 m-0 font-bold text-black  dark:text-white ">
+                    <h1 class="xl:text-[44px]  text-[30px] text-nowrap p-0 m-0 font-bold text-black  dark:text-white ">
                         Robust SaaS
                         Boilerplate and <br> Starter for
                         <span
-                            class="relative after:content-[''] after:bg-cyan-200 after:z-[-10] after:absolute after:h-22 lg:after:h-35 after:w-3 after:rotate-90 lg:after:left-16.5 after:left-11 after:top-[-25px] lg:after:top-[-32px] dark:after:bg-gray-700">Next.js</span>
+                            class="relative after:content-[''] after:bg-cyan-200 after:z-[-10] after:absolute after:h-22 xl:after:h-35 after:w-3 after:rotate-90 xl:after:left-16.5 after:left-11 after:top-[-25px] xl:after:top-[-32px] dark:after:bg-gray-700">Next.js</span>
                     </h1>
-                    <p class="text-gray-400 py-5 w-[95%] lg:w-[80%]">Packed with all the key integrations you need for
+                    <p class="text-gray-400 py-5 w-[95%] xl:w-[80%]">Packed with all the key integrations you need for
                         swift SaaS startup
                         launch, including -
                         Authentication, Database, Sanity Blog, Essential UI Components, Business Pages and More.
@@ -182,7 +180,7 @@
                     dark:bg-gray-800 dark:hover:bg-gray-700">Get Started</button>
                     </a>
                 </div>
-                <div class="lg:flex pr-12 relative hidden ">
+                <div class="xl:flex pr-12 relative hidden ">
                     <img src="../img/shape-01.webp" alt="" class="h-[60%]">
                     <img src="../img/hero-light.svg" alt="" class="dark:hidden w-[95%]">
                     <img src="../img/hero-dark.svg" alt="" class="hidden dark:block w-[95%]">
@@ -195,120 +193,120 @@
                 </div>
             </div>
         </section>
-        <section class="brand">
-            <div
-                class="grid grid-cols-3 px-4 lg:pl-0 lg:flex border-y py-12 bg-[#F3F4F6] dark:bg-[#181C31] border-gray-200 dark:border-gray-700  gap-10 justify-around">
-                <div>
+        <section class="brand bg-[#F3F4F6] dark:bg-[#181C31] border-y border-gray-200 dark:border-gray-700">
+            <div class="grid grid-cols-3 px-3 max-w-[1560px] mx-auto xl:flex  py-12  gap-10 justify-around ">
+                <div class="wow animate__animated animate__fadeInDown mx-auto">
                     <a href=""><img src="../img/brand-dark-01.svg" class="hidden" alt=""></a>
                     <a href=""><img src="../img/brand-light-01.svg" alt="hidden dark:block"></a>
                 </div>
-                <div>
+                <div class="wow animate__animated animate__fadeInDown mx-auto">
                     <a href=""><img src="../img/brand-dark-02.svg" class="hidden" alt=""></a>
                     <a href=""><img src="../img/brand-light-02.svg" alt="hidden dark:block"></a>
                 </div>
-                <div>
+                <div class="wow animate__animated animate__fadeInDown mx-auto">
                     <a href=""><img src="../img/brand-dark-03.svg" class="hidden" alt=""></a>
                     <a href=""><img src="../img/brand-light-03.svg" alt="hidden dark:block"></a>
                 </div>
-                <div>
+                <div class="wow animate__animated animate__fadeInDown mx-auto">
                     <a href=""><img src="../img/brand-dark-04.svg" class="hidden" alt=""></a>
                     <a href=""><img src="../img/brand-light-04.svg" alt="hidden dark:block"></a>
                 </div>
-                <div>
+                <div class="wow animate__animated animate__fadeInDown mx-auto">
                     <a href=""><img src="../img/brand-dark-05.svg" class="hidden" alt=""></a>
                     <a href=""><img src="../img/brand-light-05.svg" alt="hidden dark:block"></a>
                 </div>
-                <div>
+                <div class="wow animate__animated animate__fadeInDown mx-auto">
                     <a href=""><img src="../img/brand-dark-06.svg" class="hidden" alt=""></a>
                     <a href=""><img src="../img/brand-light-06.svg" alt="hidden dark:block"></a>
                 </div>
             </div>
         </section>
-        <section class="features pt-30 relative" id="features">
-            <div class="title text-center">
+        <section class="features pt-30 relative  max-w-[1560px] mx-auto" id="features">
+            <div class="title text-center wow animate__animated animate__fadeInDown animate__slow">
                 <span
                     class="px-5 py-3 bg-[#EDF5FF] dark:bg-[#1c2136] dark:text-white text-black text-sm rounded-[25px] font-medium dark:border-gray-700 dark:border">SOLID
                     FEATURES</span>
-                <h1 class="my-5 text-black dark:text-white text-[30px] lg:text-[40px]  font-bold">Core Features of Solid
+                <h1 class="my-5 text-black dark:text-white text-[30px] xl:text-[40px]  font-bold">Core Features of Solid
                 </h1>
-                <p class="text-gray-400 w-auto mx-2 lg:mx-0">Lorem ipsum dolor sit amet, consectetur adipiscing
+                <p class="text-gray-400 w-auto mx-2 xl:mx-0">Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit. In convallis tortor
                     eros.Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</span></p>
 
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:px-[7%] mx-3 lg:mx-0 pt-15">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-15 mx-3  xl:mx-25 pt-15 wow animate__animated animate__flash ">
                 <div
-                    class="lg:p-12 p-8 bg-white shadow-lg hover:shadow-2xl lg:max-w-[400px] rounded-lg dark:bg-[#1c2136]  dark:border dark:border-gray-700 dark:hover:bg-[#252A42]">
+                    class="xl:px-14 xl:py-12 p-8 bg-white shadow-xl hover:shadow-2xl  rounded-xl dark:bg-[#1c2136]  dark:border dark:border-gray-700 dark:hover:bg-[#252A42]">
                     <img src="../img/icon-01.svg" alt="" class="p-4 mb-5 bg-blue-600 rounded-sm">
-                    <h1 class="font-semibold lg:text-[26px] text-xl text-black dark:text-white mb-5">Crafted for SaaS
+                    <h1 class="font-semibold xl:text-[26px] text-xl text-black dark:text-white mb-5">Crafted for SaaS
                     </h1>
-                    <p class="text-gray-400 mb-5">Lorem ipsum dolor sit amet,<span class="inline lg:block">consectetur
+                    <p class="text-gray-400 mb-5">Lorem ipsum dolor sit amet,<span class="inline xl:block">consectetur
                             adipiscing elit. In
                             convallis tortor.</span></p>
                 </div>
                 <div
-                    class="lg:p-12 p-8 bg-white shadow-lg hover:shadow-2xl lg:max-w-[400px] rounded-lg dark:bg-[#1c2136]  dark:border dark:border-gray-700 dark:hover:bg-[#252A42]">
+                    class="xl:p-12 p-8 bg-white shadow-xl hover:shadow-2xl  rounded-xl dark:bg-[#1c2136]  dark:border dark:border-gray-700 dark:hover:bg-[#252A42]">
                     <img src="../img/icon-02.svg" alt="" class="p-4 mb-5 bg-blue-600 rounded-sm">
-                    <h1 class="font-semibold lg:text-[26px] text-xl text-black dark:text-white mb-5">High-quality Design
+                    <h1 class="font-semibold xl:text-[26px] text-xl text-black dark:text-white mb-5">High-quality Design
                     </h1>
-                    <p class="text-gray-400 mb-5">Lorem ipsum dolor sit amet,<span class="inline lg:block"> consectetur
+                    <p class="text-gray-400 mb-5">Lorem ipsum dolor sit amet,<span class="inline xl:block"> consectetur
                             adipiscing elit. In
                             convallis tortor.</span></p>
                 </div>
                 <div
-                    class="lg:p-12 p-8 bg-white shadow-lg rou hover:shadow-2xl lg:max-w-[400px] rounded-lg dark:bg-[#1c2136]  dark:border dark:border-gray-700 dark:hover:bg-[#252A42]">
+                    class="xl:p-12 p-8 bg-white shadow-xl rou hover:shadow-2xl  rounded-xl dark:bg-[#1c2136]  dark:border dark:border-gray-700 dark:hover:bg-[#252A42]">
                     <img src="../img/icon-03.svg" alt="" class="p-4 mb-5 bg-blue-600 rounded-sm">
-                    <h1 class="font-semibold lg:text-[26px] text-xl text-black dark:text-white mb-5">Next.js +
+                    <h1 class="font-semibold xl:text-[26px] text-xl text-black dark:text-white mb-5">Next.js +
                         TypeScript</h1>
-                    <p class="text-gray-400 mb-5">Lorem ipsum dolor sit amet,<span class="inline lg:block"> consectetur
+                    <p class="text-gray-400 mb-5">Lorem ipsum dolor sit amet,<span class="inline xl:block"> consectetur
                             adipiscing elit. In
                             convallis tortor.</span></p>
                 </div>
                 <div
-                    class="lg:p-12 p-8 bg-white shadow-lg hover:shadow-2xl lg:max-w-[400px] rounded-lg dark:bg-[#1c2136]  dark:border dark:border-gray-700 dark:hover:bg-[#252A42]">
+                    class="xl:p-12 p-8 bg-white shadow-xl hover:shadow-2xl xl:max-w-[400px] rounded-xl dark:bg-[#1c2136]  dark:border dark:border-gray-700 dark:hover:bg-[#252A42]">
                     <img src="../img/icon-04.svg" alt="" class="p-4 mb-5 bg-blue-600 rounded-sm">
-                    <h1 class="font-semibold lg:text-[26px] text-xl text-black dark:text-white mb-5">Sanity Blog and
+                    <h1 class="font-semibold xl:text-[26px] text-xl text-black dark:text-white mb-5">Sanity Blog and
                         Docs</h1>
-                    <p class="text-gray-400 mb-5">Lorem ipsum dolor sit amet,<span class="inline lg:block"> consectetur
+                    <p class="text-gray-400 mb-5">Lorem ipsum dolor sit amet,<span class="inline xl:block"> consectetur
                             adipiscing elit. In
                             convallis tortor.</span></p>
                 </div>
                 <div
-                    class="lg:p-12 p-8 bg-white shadow-lg hover:shadow-2xl lg:max-w-[400px] rounded-lg dark:bg-[#1c2136]  dark:border dark:border-gray-700 dark:hover:bg-[#252A42]">
+                    class="xl:p-12 p-8 bg-white shadow-xl hover:shadow-2xl xl:max-w-[400px] rounded-xl dark:bg-[#1c2136]  dark:border dark:border-gray-700 dark:hover:bg-[#252A42]">
                     <img src="../img/icon-05.svg" alt="" class="p-4 mb-5 bg-blue-600 rounded-sm">
-                    <h1 class="font-semibold lg:text-[26px] text-xl text-black dark:text-white mb-5">DB, Auth and Stripe
+                    <h1 class="font-semibold xl:text-[26px] text-xl text-black dark:text-white mb-5">DB, Auth and Stripe
                     </h1>
-                    <p class="text-gray-400 mb-5">Lorem ipsum dolor sit amet,<span class="inline lg:block"> consectetur
+                    <p class="text-gray-400 mb-5">Lorem ipsum dolor sit amet,<span class="inline xl:block"> consectetur
                             adipiscing elit. In
                             convallis tortor.</span></p>
                 </div>
                 <div
-                    class="lg:p-12 p-8 bg-white shadow-lg hover:shadow-2xl lg:max-w-[400px] rounded-lg dark:bg-[#1c2136]  dark:border dark:border-gray-700 dark:hover:bg-[#252A42]">
+                    class="xl:p-12 p-8 bg-white shadow-xl hover:shadow-2xl xl:max-w-[400px] rounded-xl dark:bg-[#1c2136]  dark:border dark:border-gray-700 dark:hover:bg-[#252A42]">
                     <img src="../img/icon-06.svg" alt="" class="p-4 mb-5 bg-blue-600 rounded-sm">
-                    <h1 class="font-semibold lg:text-[26px] text-xl text-black dark:text-white mb-5">DB, Auth and Stripe
+                    <h1 class="font-semibold xl:text-[26px] text-xl text-black dark:text-white mb-5">DB, Auth and Stripe
                     </h1>
-                    <p class="text-gray-400 mb-5">Lorem ipsum dolor sit amet,<span class="inline lg:block"> consectetur
+                    <p class="text-gray-400 mb-5">Lorem ipsum dolor sit amet,<span class="inline xl:block"> consectetur
                             adipiscing elit. In
                             convallis tortor.</span></p>
                 </div>
             </div>
         </section>
-        <section class="news">
-            <div class="grid lg:grid-cols-2 mx-3 lg:pt-30 pt-20 lg:w-[82%] md:mx-auto">
-                <div class="hidden lg:block">
+        <section class="news max-w-[1560px] mx-auto">
+            <div class="grid xl:grid-cols-2 mx-3 xl:pt-30 pt-20 xl:mx-8">
+                <div class="hidden xl:block animate__animated wow animate__bounceInLeft animate__slower ">
                     <img src="../img/about-light-01.webp" alt="" class=" w-[90%] dark:hidden">
                     <img src="../img/image_7.png" alt="" class=" w-[90%] hidden dark:block">
                 </div>
-                <div class="lg:mt-5 lg:ml-20 ">
+                <div class="xl:mt-5 xl:ml-10 animate__animated wow animate__bounceInRight animate__slow">
                     <div class="mb-3">
                         <span
-                            class="py-2 px-4 bg-green-800 text-white rounded-[25px] mr-4 text-[12px] lg:text-base">NEW</span>
-                        <span class="text-lg font-medium mb-2 text-black dark:text-white uppercase">SaaS Boilerplate for
+                            class="py-2 px-4 bg-green-800 text-white rounded-[25px] mr-4 text-[12px] xl:text-base">NEW</span>
+                        <span class="text-xl font-medium mb-2 text-black dark:text-white uppercase">SaaS Boilerplate for
                             Next.js</span>
                     </div>
-                    <span class="lg:text-[44px] text-[30px] text-nowrap font-bold text-black dark:text-white">A
+                    <span class="xl:text-[44px] text-[30px] text-nowrap font-bold text-black dark:text-white">A
                         Complete Solution for <br> <span
-                            class="relative after:content-[''] after:bg-cyan-200 after:z-[-1] after:absolute lg:after:h-68 after:h-40 after:w-3 after:rotate-90 lg:after:left-32 lg:after:top-[-97px] after:top-[-55px] after:left-20  dark:after:bg-gray-700">SaaS
+                            class="relative after:content-[''] after:bg-cyan-200 after:z-[-1] after:absolute xl:after:h-68 after:h-40 after:w-3 after:rotate-90 xl:after:left-32 xl:after:top-[-97px] after:top-[-55px] after:left-20  dark:after:bg-gray-700">SaaS
                             Startup</span></span>
                     <p class="text-gray-400 py-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies
                         lacus non fermentum ultrices. Fusce consectetur le.</p>
@@ -325,22 +323,22 @@
                         <span
                             class="max-w-[18%] text-center pt-4 text-xl font-semibold w-15 h-15 rounded-[50%] bg-white text-black border border-gray-200 dark:border-gray-700 dark:bg-[#1c2136] dark:text-white">02</span>
                         <div class="max-w-[80%] ml-6">
-                            <p class="text-xl text-black dark:text-white">Algolia Integration for Site Search</p>
+                            <p class="text-xl text-black dark:text-white">Axlolia Integration for Site Search</p>
                             <p class="text-gray-400">consectetur adipiscing elit fermentum ultricies.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="essential">
-            <div class="grid lg:grid-cols-2 lg:pt-30 pt-20 mx-3 md:w-[82%] lg:mx-auto">
-                <div class="mt-5">
-                    <span class="text-lg font-medium mb-2 text-black dark:text-white uppercase">Launch Your SaaS
+        <section class="essential max-w-[1560px] mx-auto">
+            <div class="grid xl:grid-cols-2 xl:pt-30 pt-20 mx-3 xl:mx-8">
+                <div class="mt-5 animate__animated wow animate__bounceInLeft animate__slower">
+                    <span class="text-xl font-medium mb-2 text-black dark:text-white uppercase">Launch Your SaaS
                         Fast</span>
-                    <h1 class="lg:text-[44px] text-3xl p-0 m-0 font-bold text-black dark:text-white">Packed with All
+                    <h1 class="xl:text-[44px] text-3xl p-0 m-0 font-bold text-black dark:text-white">Packed with All
                         Essential <br>
                         &nbsp; <span
-                            class="relative after:content-[''] after:bg-orange-200 after:z-[-10] after:absolute lg:after:h-62  after:h-42 after:w-3 after:rotate-90 lg:after:left-29  after:left-21 lg:after:top-[-85px]  after:top-[-60px] dark:after:bg-gray-700">Integrations</span>
+                            class="relative after:content-[''] after:bg-orange-200 after:z-[-10] after:absolute xl:after:h-62  after:h-42 after:w-3 after:rotate-90 xl:after:left-29  after:left-21 xl:after:top-[-85px]  after:top-[-60px] dark:after:bg-gray-700">Integrations</span>
                     </h1>
                     <p class="text-gray-400 py-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultricies
                         lacus non fermentum ultrices. Fusce consectetur le.</p>
@@ -353,130 +351,668 @@
                         </svg>
                     </a>
                 </div>
-                <div class="ml-20 hidden lg:block">
+                <div class="ml-20 hidden xl:block animate__animated wow animate__bounceInRight animate__slower">
                     <img src="../img/about-light-02.svg" alt="" class="dark:hidden ">
                     <img src="../img/about-dark-02.svg" alt="" class="hidden dark:block">
                 </div>
             </div>
         </section>
-        <section class="list-option">
+        <section class="list-option max-w-[1560px] mx-auto">
             <div
-                class="lg:max-w-[94%] lg:mx-auto pt-20 lg:mb-100 mb-130 mx-3 lg:pb-50  relative lg:bg-[url(../img/shape-dotted-light.svg)] lg:dark:bg-[url(../img/shape-dotted-dark.svg)]">
+                class="xl:mx-8 pt-20 xl:mb-100 mb-130 mx-3 xl:pb-50 relative xl:bg-[url(../img/shape-dotted-light.svg)] xl:dark:bg-[url(../img/shape-dotted-dark.svg)] ">
                 <div
-                    class="bg-white dark:bg-[#1c2136] shadow-xl border border-gray-300 dark:border-gray-700 rounded-xl">
-                    <div class="grid lg:grid-cols-3 lg:gap-10 lg:mx-30">
-                        <div class="tab-btn lg:py-5 py-2 cursor-pointer relative  after:content-[''] after:absolute after:h-1 after:bottom-0 after:rounded-tl-xl after:rounded-tr-xl after:w-full after:bg-blue-600 border-b lg:border-0 border-gray-200 dark:border-gray-700"
+                    class="bg-white dark:bg-[#1c2136] shadow-xl border border-gray-300 dark:border-gray-700 rounded-xl animate__animated wow  animate__slower animate__fadeInDown">
+                    <div class="grid xl:grid-cols-3 xl:gap-10 xl:mx-30">
+                        <div class="tab-btn xl:py-5 py-2 cursor-pointer relative  after:content-[''] after:absolute after:h-1 after:bottom-0 after:rounded-tl-xl after:rounded-tr-xl after:w-full after:bg-blue-600 border-b xl:border-0 border-gray-200 dark:border-gray-700"
                             data-tab="1">
-                            <div class=" cursor-pointer text-black  dark:text-white flex items-center gap-5 lg:mx-[10%] mx-[5%]"
+                            <div class=" cursor-pointer text-black  dark:text-white flex items-center gap-5 xl:mx-[10%] mx-[5%]"
                                 data-tab="1">
                                 <span
-                                    class="max-w-[18%] text-center py-3 text-lg font-semibold w-13 h-13 rounded-[50%]  text-black border border-gray-200 dark:border-gray-700 dark:bg-[#1c2136] dark:text-white">01</span>
+                                    class="max-w-[18%] text-center py-3 text-xl font-semibold w-13 h-13 rounded-[50%]  text-black border border-gray-200 dark:border-gray-700 dark:bg-[#1c2136] dark:text-white">01</span>
                                 <span>Clean User Interface</span>
                             </div>
                         </div>
-                        <div class="tab-btn lg:py-5 py-2 cursor-pointer relative after:content-[''] after:absolute after:h-1 after:bottom-0 after:rounded-tl-xl after:rounded-tr-xl after:w-full after:bg-blue-600 after:opacity-0 border-b lg:border-0 border-gray-200 dark:border-gray-700"
+                        <div class="tab-btn xl:py-5 py-2 cursor-pointer relative after:content-[''] after:absolute after:h-1 after:bottom-0 after:rounded-tl-xl after:rounded-tr-xl after:w-full after:bg-blue-600 after:opacity-0 border-b xl:border-0 border-gray-200 dark:border-gray-700"
                             data-tab="2">
-                            <div class="cursor-pointer text-black  dark:text-white flex items-center gap-5 lg:mx-[10%] mx-[5%]"
+                            <div class="cursor-pointer text-black  dark:text-white flex items-center gap-5 xl:mx-[10%] mx-[5%]"
                                 data-tab="2">
                                 <span
-                                    class="max-w-[18%] text-center py-3 text-lg font-semibold w-13 h-13  rounded-[50%]  text-black border border-gray-200 dark:border-gray-700 dark:bg-[#1c2136] dark:text-white">02</span>
+                                    class="max-w-[18%] text-center py-3 text-xl font-semibold w-13 h-13  rounded-[50%]  text-black border border-gray-200 dark:border-gray-700 dark:bg-[#1c2136] dark:text-white">02</span>
                                 <span>Essential Business Pages</span>
                             </div>
                         </div>
-                        <div class=" tab-btn lg:py-5 py-2 cursor-pointer relative after:content-[''] after:absolute after:h-1 after:bottom-0 after:rounded-tl-xl after:rounded-tr-xl after:w-full after:bg-blue-600 after:opacity-0 border-b lg:border-0 border-gray-200 dark:border-gray-700"
+                        <div class=" tab-btn xl:py-5 py-2 cursor-pointer relative after:content-[''] after:absolute after:h-1 after:bottom-0 after:rounded-tl-xl after:rounded-tr-xl after:w-full after:bg-blue-600 after:opacity-0 border-b xl:border-0 border-gray-200 dark:border-gray-700"
                             data-tab="3">
-                            <div class=" cursor-pointer text-black dark:text-white flex items-center gap-5 lg:mx-[10%] mx-[5%]"
+                            <div class=" cursor-pointer text-black dark:text-white flex items-center gap-5 xl:mx-[10%] mx-[5%]"
                                 data-tab="3">
                                 <span
-                                    class="max-w-[18%] text-center py-3 text-lg font-semibold w-13 h-13  rounded-[50%]  text-black border border-gray-200 dark:border-gray-700 dark:bg-[#1c2136] dark:text-white">03</span>
+                                    class="max-w-[18%] text-center py-3 text-xl font-semibold w-13 h-13  rounded-[50%]  text-black border border-gray-200 dark:border-gray-700 dark:bg-[#1c2136] dark:text-white">03</span>
                                 <span>Fully Functional Integrations</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="grid lg:grid-cols-2 py-20 lg:w-[82%] lg:mx-[9%] mx-3 absolute ">
+                <div
+                    class="grid xl:grid-cols-2 py-20 xl:w-[82%] xl:mx-[9%] mx-3 absolute animate__animated wow  animate__slower animate__fadeInDown">
                     <div class="mt-5">
                         <ul>
                             <li class="tab-content" data-content="1">
-                                <h1 class="lg:text-[44px] text-3xl p-0 m-0 font-bold text-black dark:text-white">Solid
+                                <h1 class="xl:text-[44px] text-3xl p-0 m-0 font-bold text-black dark:text-white">Solid
                                     UI with Solid
                                     Features.
                                 </h1>
                             </li>
                             <li class="hidden tab-content" data-content="2">
-                                <h1 class="lg:text-[44px] text-3xl p-0 m-0 font-bold text-black dark:text-white">Pages
+                                <h1 class="xl:text-[44px] text-3xl p-0 m-0 font-bold text-black dark:text-white">Pages
                                     and UI
                                     Components You Need for a SaaS.</h1>
                             </li>
                             <li class="hidden tab-content" data-content="3">
-                                <h1 class="lg:text-[44px] text-3xl p-0 m-0 font-bold text-black dark:text-white">
+                                <h1 class="xl:text-[44px] text-3xl p-0 m-0 font-bold text-black dark:text-white">
                                     Functional Blog,
                                     DB, Auth and Many More</h1>
                             </li>
                         </ul>
                         <p class="text-gray-400 py-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                            ultricies <span class="inline lg:block">
+                            ultricies <span class="inline xl:block">
                                 lacus non fermentum ultrices. Fusce consectetur le.</span></p>
                         <p class="text-gray-400 pb-7">Nam id eleifend dui, id iaculis purus. Etiam lobortis neque nec
-                            <span class="inline lg:block">finibus sagittis. Nulla ligula nunc egestas ut.</span>
+                            <span class="inline xl:block">finibus sagittis. Nulla ligula nunc egestas ut.</span>
                         </p>
                     </div>
-                    <div class="ml-10 hidden lg:block">
+                    <div class="ml-10 hidden xl:block">
                         <img src="../img/features-light-01.webp" alt="" class="dark:hidden">
                         <img src="../img/features-dark-01.svg" alt="" class="hidden dark:block">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="trusted">
+        <section class="trusted max-w-[1560px] mx-auto">
             <div
-                class="lg:max-w-[94%] py-30 rounded-xl mx-3 bg-blue-50 z-[-2] dark:bg-[#1c2136] lg:mx-auto lg:bg-[url(../img/shape-dotted-light.svg)] lg:dark:bg-[url(../img/shape-dotted-dark.svg)] relative">
-                <div class="absolute lg:left-0  lg:bottom-70 bottom-77 left-[-60px] z-[-1]">
+                class="py-30 rounded-xl mx-3 xl:mx-8 bg-blue-50 z-[-2] dark:bg-[#1c2136]  xl:bg-[url(../img/shape-dotted-light.svg)] xl:dark:bg-[url(../img/shape-dotted-dark.svg)] relative">
+                <div class="absolute xl:left-0  xl:bottom-70 bottom-77 left-[-60px] z-[-1]">
                     <img src="../img/image_2.png" alt="" class="h-[400px] ">
                 </div>
-                <div class="text-center pb-10">
-                    <h1 class="lg:text-[44px] text-3xl p-0 m-0 font-bold text-black dark:text-white">Trusted by Global
+                <div class="text-center pb-10 animate__animated wow  animate__slower animate__fadeInDown">
+                    <h1 class="xl:text-[44px] text-3xl p-0 m-0 font-bold text-black dark:text-white">Trusted by Global
                         Companies.
                     </h1>
                     <p class="text-gray-400 py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
-                        tortor eros. <span class="inline lg:block">
+                        tortor eros. <span class="inline xl:block">
                             Donec vitae tortor lacus. Phasellus aliquam ante in maximus.</span>
                     </p>
                 </div>
-                <div class="grid grid-cols-3 lg:gap-10 gap-10 text-center lg:max-w-[70%] lg:mx-auto">
+                <div
+                    class="grid grid-cols-3 xl:gap-10 gap-10 text-center xl:max-w-[70%] xl:mx-auto animate__animated wow  animate__slower animate__fadeInDown">
                     <div>
-                        <h1 class="lg:text-[44px] text-3xl py-3 m-0 font-bold text-black dark:text-white">500K</h1>
-                        <p class="lg:text-[22px]  text-lg w-40 lg:w-auto text-start lg:text-center text-gray-400">World
+                        <h1 class="xl:text-[44px] text-3xl py-3 m-0 font-bold text-black dark:text-white">500K</h1>
+                        <p class="xl:text-[22px] text-xl text-gray-400">World
                             Wide Clients</p>
                     </div>
                     <div>
-                        <h1 class="lg:text-[44px] text-3xl py-3 m-0 font-bold text-black dark:text-white">1M+</h1>
-                        <p class="lg:text-[22px]  text-lg text-gray-400">Downloads</p>
+                        <h1 class="xl:text-[44px] text-3xl py-3 m-0 font-bold text-black dark:text-white">1M+</h1>
+                        <p class="xl:text-[22px]  text-xl text-gray-400">Downloads</p>
                     </div>
                     <div>
-                        <h1 class="lg:text-[44px] text-3xl py-3 m-0 font-bold text-black dark:text-white">865</h1>
-                        <p class="lg:text-[22px] text-lg text-gray-400">Winning Award</p>
+                        <h1 class="xl:text-[44px] text-3xl py-3 m-0 font-bold text-black dark:text-white">865</h1>
+                        <p class="xl:text-[22px] text-xl text-gray-400">Winning Award</p>
                     </div>
                 </div>
-                <div class="absolute right-0 lg:bottom-0 bottom-10">
+                <div class="absolute right-0 xl:bottom-0 bottom-10">
                     <img src="../img/image_37.png" alt="" class="w-30">
                 </div>
             </div>
         </section>
         <!-- kien -->
-        <section class="integrations"></section>
-        <section class="members"></section>
-        <section class="questions"></section>
-        <section class="testimonials"></section>
-        <section class="plans"></section>
-        <section class="contact"></section>
-        <section class="blogs"></section>
+        <section class="integrations pt-[100px] xl:pt-[150px] overflow-hidden max-w-[1560px] mx-auto">
+            <div class="intergrations-content relative  mx-3 xl:mx-8">
+                <img src="../img/shape-dotted-light.svg" alt=""
+                    class="hidden xl:block absolute top-[115px] left-[5%] w-[90%] dark:hidden pointer-events-none">
+                <img src="../img/shape-dotted-dark.svg" alt=""
+                    class="hidden xl:block absolute top-[115px] left-[5%] w-[90%] hidden dark:block pointer-events-none">
+
+                <div class="wow animate__animated animate__fadeInDown animate__slow">
+                    <div
+                        class="mx-auto mb-[15px] bg-[#edf5ff] w-[100px] h-[25px] flex justify-center items-center rounded-[5px] dark:bg-[#1c2136] border border-transparent dark:border-[#2d2f40]">
+                        <span class="text-[12px] font-[500] text-black dark:text-white uppercase">INTEGRATIONS</span>
+                    </div>
+                    <h1
+                        class="text-center text-[28px] md:text-[35px] xl:text-[40px] font-[700] leading-tight mb-[15px] text-black dark:text-white">
+                        Packed with all the key <br class="hidden md:block"> integrations you need
+                    </h1>
+                    <p class="text-center text-gray-500 text-[16px] xl:text-[18px] mb-[60px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. <br
+                            class="hidden xl:block"> Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
+                    </p>
+                </div>
+
+                <div
+                    class="relative w-full h-[400px] md:h-[450px] xl:h-[200px] wow animate__animated animate__fadeInDown animate__slow">
+
+                    <div
+                        class="bg-white dark:bg-[#292e45] w-[60px] h-[60px] md:w-[70px] md:h-[70px] xl:w-[80px] xl:h-[80px] rounded-[10px] shadow-xl flex justify-center items-center absolute left-[5%] top-[-5%]">
+                        <img src="../img/brand-07.svg" alt="" class="w-[60%]">
+                    </div>
+
+                    <div
+                        class="bg-white dark:bg-[#292e45] w-[60px] h-[60px] md:w-[70px] md:h-[70px] xl:w-[80px] xl:h-[80px] rounded-[10px] shadow-xl flex justify-center items-center absolute left-[35%] top-[-5%]">
+                        <img src="../img/brand-08.svg" alt="" class="w-[60%]">
+                        <div
+                            class="w-[8px] h-[8px] xl:w-[10px] xl:h-[10px] rounded-full bg-[#ffdb26] absolute -top-[3px] -right-[25px]">
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white dark:bg-[#292e45] w-[60px] h-[60px] md:w-[70px] md:h-[70px] xl:w-[80px] xl:h-[80px] rounded-[10px] shadow-xl flex justify-center items-center absolute left-[65%] top-[-5%]">
+                        <img src="../img/brand-09.svg" alt="" class="w-[60%]">
+                    </div>
+
+                    <div
+                        class="bg-white dark:bg-[#292e45] w-[60px] h-[60px] md:w-[70px] md:h-[70px] xl:w-[80px] xl:h-[80px] rounded-[10px] shadow-xl flex justify-center items-center absolute left-[20%] top-[25%] xl:top-[55%]">
+                        <img src="../img/brand-10.svg" alt="" class="w-[60%]">
+                    </div>
+                    <div
+                        class="w-[15px] h-[15px] xl:w-[20px] xl:h-[20px] rounded-full bg-[#ef5c00] absolute top-[25%] xl:top-[55%] left-[35%]">
+                    </div>
+
+                    <div
+                        class="bg-white dark:bg-[#292e45] w-[60px] h-[60px] md:w-[70px] md:h-[70px] xl:w-[80px] xl:h-[80px] rounded-[10px] shadow-xl flex justify-center items-center absolute left-[50%] top-[25%] xl:top-[55%]">
+                        <img src="../img/brand-11.svg" alt="" class="w-[60%]">
+                    </div>
+                    <div
+                        class="w-[10px] h-[10px] xl:w-[12px] xl:h-[12px] rounded-full bg-[#016bff] absolute top-[25%] xl:top-[55%] left-[65%]">
+                    </div>
+                    <div
+                        class="bg-white dark:bg-[#292e45] w-[60px] h-[60px] md:w-[70px] md:h-[70px] xl:w-[80px] xl:h-[80px] rounded-[10px] shadow-xl flex justify-center items-center absolute left-[85%] top-[25%] xl:top-[55%]">
+                        <img src="../img/brand-12.svg" alt="" class="w-[60%]">
+                    </div>
+
+                    <div
+                        class="w-[10px] h-[10px] xl:w-[12px] xl:h-[12px] rounded-full bg-[#61e888] absolute left-[5%] top-[25%] xl:top-[55%]">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="members pt-[150px] max-w-[1560px] mx-auto">
+            <div
+                class="dark:bg-none dark:bg-[#1c2136] members-content mx-3 xl:mx-8 bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] px-[80px] rounded-[10px] flex flex-col md:flex-row gap-[50px] md:items-center pb-[50px] xl:pb-[0px] overflow-hidden">
+                <div class="xl:w-[50%] members-text wow animate__animated animate__fadeInLeft animate__slow">
+                    <h1 class="font-bold text-[35px] leading-[50px] mb-[10px] dark:text-white">Join With Us Today & <br
+                            class="hidden xl:block"> Increase Your Productivity</h1>
+                    <p class="text-gray-500 text-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                        convallis <br class="hidden xl:block"> tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+                        ante in <br class="hidden xl:block"> maximus.</p>
+                </div>
+
+                <div
+                    class="xl:w-[50%] flex justify-between items-center wow animate__animated animate__fadeInRight animate__slow">
+                    <img src="../img/image_8.png" alt="" class="hidden xl:block w-[310px]">
+                    <div class="members-btn hover:opacity-[0.8] mt-[10px] md:mt-[0px] md:right-0">
+                        <a href="#"
+                            class="py-[15px] px-[20px] bg-black dark:bg-[#ffffff] dark:hover: rounded-[50px] decoration-0 text-white dark:text-black whitespace-nowrap">
+                            Sign up free
+                            <i class="fa-solid fa-arrow-right ml-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions pt-[150px] max-w-[1560px] mx-auto">
+            <div
+                class="questions-content flex flex-col lg:flex-row lg:justify-between mx-3 xl:mx-15 overflow-hidden pb-[20px]">
+                <div class="content-left wow animate__animated animate__fadeInLeft animate__slow">
+                    <div class="questions-text relative top-[20px]">
+                        <p class="font-[500] mb-[10px] dark:text-white">OUR FAQS</p>
+
+                        <h1 class="font-bold text-[40px] leading-[50px] mb-[50px] dark:text-white z-[1] relative">
+                            Frequently Asked <br class="hidden lg:block"> <span class="relative inline-block">
+                                Questions
+                                <div class="w-full h-[10px] bg-[#ffeac2] dark:bg-[#46495a] absolute bottom-1 z-[-1]">
+                                </div>
+                            </span></h1>
+                    </div>
+
+                    <a href="#"
+                        class="block lg:mt-[200px] group pr-[40px] relative hover:text-blue-500 transition-all duration-[0.3s] dark:text-white dark:hover:text-blue-500">
+                        Know More &nbsp;
+                        <i
+                            class="fa-solid fa-arrow-right group-hover:translate-x-[10px] group-hover: transition-all duration-[0.3s] dark:text-white group-hover:text-blue-500 transition-all duration-[0.3s] "></i>
+                    </a>
+                </div>
+                <div
+                    class="content-right z-[1] w-full lg:w-[600px] wow animate__animated animate__fadeInRight animate__slow">
+                    <div id="accordion-collapse" data-accordion="collapse"
+                        class="bg-white w-full lg:w-[600px] rounded-[10px] dark:border dark:border-[#2d2f40] overflow-hidden shadow-xl mt-[100px] lg:mt-[0px]">
+                        <h2 id="accordion-collapse-heading-1">
+                            <button type="button"
+                                class="cursor-pointer group flex items-center justify-between w-full p-7.5 font-medium rtl:text-right text-body rounded-t-base border border-t-0 border-x-0 border-b-[#e1e0e0] dark:border-b-[#2d2f40] hover:text-heading dark:!bg-[#1c2136] !bg-[#ffffff] gap-3"
+                                data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                                aria-controls="accordion-collapse-body-1">
+                                <span class="text-black dark:text-white">Lorem ipsum dolor sit amet, consectetur</span>
+                                <div class="relative flex-shrink-0 w-4 h-4 mr-2">
+                                    <i
+                                        class="fa-solid fa-plus absolute inset-0 flex items-center justify-center text-black dark:text-white transition-all duration-300 transform group-aria-expanded:rotate-90 group-aria-expanded:opacity-0 group-aria-expanded:scale-0"></i>
+
+                                    <i
+                                        class="fa-solid fa-minus absolute inset-0 flex items-center justify-center text-black dark:text-white transition-all duration-300 transform scale-0 opacity-0 group-aria-expanded:scale-100 group-aria-expanded:opacity-100"></i>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-1"
+                            class="hidden border border-s-0 border-e-0 border-t-0 border-b-[#e1e0e0] dark:border-b-[#2d2f40] !bg-[#ffffff] dark:!bg-[#1c2136]"
+                            aria-labelledby="accordion-collapse-heading-1">
+                            <div class="p-4 md:p-5">
+                                <p class="mb-2 text-body text-[#757693]">We provide digital experience services to
+                                    startups and small <br class="hidden lg:block"> businesses. We help our clients
+                                    succeed by creating brand <br class="hidden lg:block"> identities, digital
+                                    experiences.</p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-collapse-heading-2">
+                            <button type="button"
+                                class="cursor-pointer group flex items-center justify-between w-full p-7.5 font-medium rtl:text-right text-body border border-x-0 border-b-[#e1e0e0] dark:border-b-[#2d2f40] border-t-0 hover:text-heading gap-3 dark:!bg-[#1c2136]"
+                                data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                                aria-controls="accordion-collapse-body-2">
+                                <span class="text-black dark:text-white">Lorem ipsum dolor sit amet, consectetur</span>
+                                <div class="relative flex-shrink-0 w-4 h-4 mr-2">
+                                    <i
+                                        class="fa-solid fa-plus absolute inset-0 flex items-center justify-center text-black dark:text-white transition-all duration-300 transform group-aria-expanded:rotate-90 group-aria-expanded:opacity-0 group-aria-expanded:scale-0"></i>
+
+                                    <i
+                                        class="fa-solid fa-minus absolute inset-0 flex items-center justify-center text-black dark:text-white transition-all duration-300 transform scale-0 opacity-0 group-aria-expanded:scale-100 group-aria-expanded:opacity-100"></i>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-2"
+                            class="hidden border border-s-0 border-e-0 border-t-0 border-b-[#e1e0e0] dark:border-b-[#2d2f40] dark:!bg-[#1c2136]"
+                            aria-labelledby="accordion-collapse-heading-2">
+                            <div class="p-4 md:p-5">
+                                <p class="mb-2 text-body text-[#757693]">We provide digital experience services to
+                                    startups and small <br class="hidden lg:block"> businesses. We help our clients
+                                    succeed by creating brand <br class="hidden lg:block"> identities, digital
+                                    experiences.</p>
+                                </p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-collapse-heading-3">
+                            <button type="button"
+                                class="cursor-pointer group flex items-center justify-between w-full p-7.5 font-medium rtl:text-right text-body hover:text-heading hover:bg-neutral-secondary-medium gap-3 dark:!bg-[#1c2136]"
+                                data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                                aria-controls="accordion-collapse-body-3">
+                                <span class="text-black dark:text-white">Lorem ipsum dolor sit amet, consectetur</span>
+                                <div class="relative flex-shrink-0 w-4 h-4 mr-2">
+                                    <i
+                                        class="fa-solid fa-plus absolute inset-0 flex items-center justify-center text-black dark:text-white transition-all duration-300 transform group-aria-expanded:rotate-90 group-aria-expanded:opacity-0 group-aria-expanded:scale-0"></i>
+
+                                    <i
+                                        class="fa-solid fa-minus absolute inset-0 flex items-center justify-center text-black dark:text-white transition-all duration-300 transform scale-0 opacity-0 group-aria-expanded:scale-100 group-aria-expanded:opacity-100"></i>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-3" class="hidden dark:!bg-[#1c2136]"
+                            aria-labelledby="accordion-collapse-heading-3">
+                            <div
+                                class="p-4 md:p-5 border border-t-[#e1e0e0] border-b-0 border-x-0 dark:border-t-[#2d2f40]">
+                                <p class="mb-2 text-body text-[#757693]">We provide digital experience services to
+                                    startups and small <br class="hidden lg:block"> businesses. We help our clients
+                                    succeed by creating brand <br class="hidden lg:block"> identities, digital
+                                    experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials mt-[180px] mx-3 xl:mx-15 max-w-[1560px] mx-auto relative">
+            <div
+                class="questions-background  dark:hidden hidden lg:block pointer-events-none absolute left-[50%] translate-x-[-50%] w-full px-[50px] top-[-510px]">
+                <img src="../img/shape-dotted-light.svg" alt="" class="w-full h-[400px] object-cover">
+            </div>
+            <div
+                class="dark:block hidden dark:lg:block pointer-events-none absolute left-[50%] translate-x-[-50%] w-full px-[50px] top-[-510px]">
+                <img src="../img/shape-dotted-dark.svg" alt=""
+                    class="dark:block hidden lg:block pointer-events-none w-full h-full object-cover">
+            </div>
+            <div class="testimonials-content">
+                <div class="wow animate__animated animate__fadeInDown animate__slow">
+                    <div
+                        class="wow animate__animated animate__fadeInDown animate__slow mx-auto mb-[15px] bg-[#edf5ff] max-w-[100px] h-[25px] flex justify-center items-center rounded-[5px] dark:bg-[#1c2136] border-solid border-[1px] border-transparent dark:border-[#2d2f40]">
+                        <span class="text-[12px] font-[500] text-center text-black dark:text-white">TESTIMONIALS</span>
+                    </div>
+                    <h1
+                        class="intergrations-tittle text-center text-[40px] font-[700] leading-[45px] mb-[15px] text-black dark:text-white">
+                        Client’s Testimonials</h1>
+                    <p class="intergrations-text text-center text-gray-500 text-[15px]">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In convallis tortor eros. <br class="hidden lg:block"> Donec vitae
+                        tortor lacus. Phasellus aliquam ante in maximus.</p>
+                </div>
+                <div class="testimonials-slider pt-[80px] wow animate__animated animate__fadeInDown animate__slow">
+                    <div class="slider-divid bg-white dark:bg-[#181c31]  rounded-[10px] p-[20px]">
+                        <div
+                            class="slider-item p-[20px] bg-white relative shadow-[0_10px_30px_-15px_rgba(0,0,0,0.15)] dark:border dark:border-[#2d2f40] rounded-[10px] dark:bg-[#1c2136]">
+                            <div class="slider-header flex pt-[20px]">
+                                <div class="slider-header-text">
+                                    <h2 class="text-[17px] font-[400] mb-[5px] dark:text-white">Devid Smith</h2>
+                                    <p class="text-[15px] text-gray-600">Founter @democompany</p>
+                                </div>
+                                <img src="../img/image_1.png" alt="" class="right-[55px] absolute">
+                            </div>
+                            <div class="seperate top-[120px] w-[90%] h-[0.5px] bg-gray-100 dark:bg-gray-500 absolute">
+                            </div>
+                            <div class="slider-content">
+                                <p class="text-[15px] text-gray-600 pt-[50px] leading-[25px]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br
+                                        class="hidden lg:block"> hendrerit, ligula sit amet cursus tincidunt, lorem sem
+                                    elementum nisi, <br class="hidden lg:block"> convallis fringilla ante nibh non urna.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-divid bg-white dark:bg-[#181c31]  rounded-[10px] p-[20px]">
+                        <div
+                            class="slider-item p-[20px] bg-white relative shadow-[0_10px_30px_-15px_rgba(0,0,0,0.15)] dark:border dark:border-[#2d2f40] rounded-[10px] dark:bg-[#1c2136]">
+                            <div class="slider-header flex pt-[20px]">
+                                <div class="slider-header-text">
+                                    <h2 class="text-[17px] font-[400] mb-[5px] dark:text-white">Jhon Abraham</h2>
+                                    <p class="text-[15px] text-gray-600">Founter @democompany</p>
+                                </div>
+                                <img src="../img/image_10.png" alt="" class="right-[55px] absolute">
+                            </div>
+                            <div class="seperate top-[120px] w-[90%] h-[0.5px] bg-gray-100 dark:bg-gray-500 absolute">
+                            </div>
+                            <div class="slider-content">
+                                <p class="text-[15px] text-gray-600 pt-[50px] leading-[25px]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br
+                                        class="hidden lg:block"> hendrerit, ligula sit amet cursus tincidunt, lorem sem
+                                    elementum nisi, <br class="hidden lg:block"> convallis fringilla ante nibh non urna.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-divid bg-white dark:bg-[#181c31]  rounded-[10px] p-[20px]">
+                        <div
+                            class="slider-item p-[20px] bg-white relative shadow-[0_10px_30px_-15px_rgba(0,0,0,0.15)] dark:border dark:border-[#2d2f40] rounded-[10px] dark:bg-[#1c2136]">
+                            <div class="slider-header flex pt-[20px]">
+                                <div class="slider-header-text">
+                                    <h2 class="text-[17px] font-[400] mb-[5px] dark:text-white">Devid Smith</h2>
+                                    <p class="text-[15px] text-gray-600">Founter @democompany</p>
+                                </div>
+                                <img src="../img/image_1.png" alt="" class="right-[55px] absolute">
+                            </div>
+                            <div class="seperate top-[120px] w-[90%] h-[0.5px] bg-gray-100 dark:bg-gray-500 absolute">
+                            </div>
+                            <div class="slider-content">
+                                <p class="text-[15px] text-gray-600 pt-[50px] leading-[25px]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br
+                                        class="hidden lg:block"> hendrerit, ligula sit amet cursus tincidunt, lorem sem
+                                    elementum nisi, <br class="hidden lg:block"> convallis fringilla ante nibh non urna.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-divid bg-white dark:bg-[#181c31]  rounded-[10px] p-[20px]">
+                        <div
+                            class="slider-item p-[20px] bg-white relative shadow-[0_10px_30px_-15px_rgba(0,0,0,0.15)] dark:border dark:border-[#2d2f40] rounded-[10px] dark:bg-[#1c2136]">
+                            <div class="slider-header flex pt-[20px]">
+                                <div class="slider-header-text">
+                                    <h2 class="text-[17px] font-[400] mb-[5px] dark:text-white">Devid Smith</h2>
+                                    <p class="text-[15px] text-gray-600">Founter @democompany</p>
+                                </div>
+                                <img src="../img/image_10.png" alt="" class="right-[55px] absolute">
+                            </div>
+                            <div class="seperate top-[120px] w-[90%] h-[0.5px] bg-gray-100 dark:bg-gray-500 absolute">
+                            </div>
+                            <div class="slider-content">
+                                <p class="text-[15px] text-gray-600 pt-[50px] leading-[25px]">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris <br
+                                        class="hidden lg:block"> hendrerit, ligula sit amet cursus tincidunt, lorem sem
+                                    elementum nisi, <br class="hidden lg:block"> convallis fringilla ante nibh non urna.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="plans pt-[150px] max-w-[1560px] mx-auto">
+            <div class="plans-content mx-3 xl:mx-15">
+                <div class="wow animate__animated animate__fadeInDown animate__slow">
+                    <div
+                        class="mx-auto mb-[15px] bg-[#edf5ff] max-w-[100px] h-[25px] flex justify-center items-center rounded-[5px] dark:bg-[#1c2136] border-solid border-[1px] border-transparent dark:border-[#2d2f40]">
+                        <span class="text-[12px] font-[500] text-center text-black dark:text-white">PRICING PLANS</span>
+                    </div>
+                    <h1
+                        class="intergrations-tittle text-center text-[40px] font-[700] leading-[45px] mb-[15px] text-black dark:text-white">
+                        Simple Pricing</h1>
+                    <p class="intergrations-text text-center text-gray-500 text-[15px]">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In convallis tortor eros. <br class="hidden xl:block"> Donec vitae
+                        tortor lacus. Phasellus aliquam ante in maximus.</p>
+                </div>
+                <!-- -------------------- -->
+                <div
+                    class=" plans-items grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pt-[100px] gap-[50px] items-stretch wow animate__animated animate__fadeInDown animate__slow">
+                    <div class="plans-box p-[50px] rounded-[10px] border border-[#c7c8cd] dark:border-[#2d2f40]">
+                        <h1 class="text-[45px] font-bold mb-[30px] dark:text-white">$ 100<span
+                                class="text-[17px] text-gray-500 font-bold">/month</span></h1>
+                        <h2 class="text-[25px] mb-[10px] dark:text-white">Small Pack</h2>
+                        <p class="text-[#6a7282] mb-[30px] text-[17px]">Lorem ipsum dolor sit amet, <br
+                                class="hidden xl:block"> consec adipisicing elit.</p>
+                        <div class="seperate top-[120px] w-[100%] h-[0.5px] bg-gray-300 dark:bg-[#2d2f40] mb-[30px]">
+                        </div>
+                        <p class="leading-[40px] text-[17px] dark:text-[#6a7282]">
+                            300 GB Storage <br class="hidden xl:block">
+                            Unlimited Photos and Videos <br class="hidden xl:block">
+                            <span class="text-[#bec1c7] dark:text-[#404148]">
+                                Exclusive Support <br class="hidden xl:block">
+                                Custom Branding Strategy
+                            </span>
+                        </p>
+                        <a href="#"
+                            class=" block mt-[20px] group pr-[40px] text-blue-500 transition-all duration-[0.3s] dark:text-white dark:hover:text-blue-600">
+                            Get the Plan
+                            <i
+                                class="fa-solid fa-arrow-right top-[4px] ml-[10px] group-hover:translate-x-[10px] dark:text-white group-hover:text-blue-600 group-hover:transition-all duration-[0.3s]"></i>
+                        </a>
+                    </div>
+
+                    <div
+                        class="plans-box relative p-[50px] rounded-[10px] border border-[#c7c8cd] dark:border-[#2d2f40]">
+                        <div
+                            class="absolute -right-3.5 top-8.5 -rotate-90 rounded-bl-full rounded-tl-full bg-primary px-4.5 py-1.5 text-metatitle font-medium uppercase text-white bg-blue-600">
+                            POPULAR</div>
+                        <h1 class="text-[45px] font-bold mb-[30px] dark:text-white">$ 100<span
+                                class="text-[17px] text-gray-500 font-bold">/month</span></h1>
+                        <h2 class="text-[25px] mb-[10px] dark:text-white">Medium Pack</h2>
+                        <p class="text-[#6a7282] mb-[30px] text-[17px]">Lorem ipsum dolor sit amet, <br
+                                class="hidden xl:block"> consec adipisicing elit.</p>
+                        <div class="seperate top-[120px] w-[100%] h-[0.5px] bg-gray-300 dark:bg-[#2d2f40] mb-[30px]">
+                        </div>
+                        <p class="leading-[40px] text-[17px] dark:text-[#6a7282]">
+                            300 GB Storage <br class="hidden xl:block">
+                            Unlimited Photos and Videos <br class="hidden xl:block">
+                            Exclusive Support <br class="hidden xl:block">
+                            <span class="text-[#bec1c7] dark:text-[#404148]">
+                                Custom Branding Strategy
+                            </span>
+                        </p>
+                        <a href="#"
+                            class=" block mt-[20px] group pr-[40px] text-blue-500 transition-all duration-[0.3s] dark:text-white dark:hover:text-blue-600">
+                            Get the Plan
+                            <i
+                                class="fa-solid fa-arrow-right top-[4px] ml-[10px] group-hover:translate-x-[10px] dark:text-white group-hover:text-blue-600 group-hover:transition-all duration-[0.3s]"></i>
+                        </a>
+                    </div>
+                    <!-- h-[580px] w-full md:w-[350px] -->
+
+                    <div
+                        class="plans-box p-[50px] rounded-[10px] border border-[#c7c8cd] dark:border-[#2d2f40] md:col-span-2 xl:col-span-1 md:w-1/2 xl:w-full md:mx-auto">
+                        <h1 class="text-[45px] font-bold mb-[30px] dark:text-white">$ 100<span
+                                class="text-[17px] text-gray-500 font-bold">/month</span></h1>
+                        <h2 class="text-[25px] mb-[10px] dark:text-white">Large Pack</h2>
+                        <p class="text-[#6a7282] mb-[30px] text-[17px]">Lorem ipsum dolor sit amet, <br
+                                class="hidden xl:block"> consec adipisicing elit.</p>
+                        <div class="seperate top-[120px] w-[100%] h-[0.5px] bg-gray-300 dark:bg-[#2d2f40] mb-[30px]">
+                        </div>
+                        <p class="leading-[40px] text-[17px] dark:text-[#6a7282]">
+                            300 GB Storage <br class="hidden xl:block">
+                            Unlimited Photos and Videos <br class="hidden xl:block">
+                            Exclusive Support <br class="hidden xl:block">
+                            Custom Branding Strategy
+                        </p>
+                        <a href="#"
+                            class=" block mt-[20px] group pr-[40px] text-blue-500 transition-all duration-[0.3s] dark:text-white dark:hover:text-blue-600">
+                            Get the Plan
+                            <i
+                                class="fa-solid fa-arrow-right top-[4px] ml-[10px] group-hover:translate-x-[10px] dark:text-white group-hover:text-blue-600 group-hover:transition-all duration-[0.3s]"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="contact pt-[150px] max-w-[1560px] mx-auto">
+            <div
+                class="contact-content bg-gradient-to-t from-[#fff] to-[#dee7ff47] px-5 xl:px-[80px] py-[60px] xl:py-[100px] dark:bg-gradient-to-t dark:from-transparent dark:to-[#24283E] flex flex-col-reverse xl:flex-row relative mx-3 xl:mx-15 wow animate__animated animate__fadeInDown animate__slow rounded-xl">
+                <div
+                    class="contact-background absolute left-1/2 -translate-x-1/2 mt-[330px] w-[95%] z-[0] hidden xl:block">
+                    <img src="../img/shape-dotted-light.svg" alt="" class="dark:hidden ">
+                    <img src="../img/shape-dotted-dark.svg" alt="" class="hidden dark:block">
+                </div>
+
+                <div class="content-left relative w-full xl:w-[60%] xl:ml-[30px] z-[1] mt-10 xl:mt-0">
+                    <div
+                        class="form-content rounded-[10px] shadow-[0_2px_10px_3px_rgba(0,0,0,0.1)] p-6 xl:p-[50px] dark:bg-[#181c31] z-[1] bg-white">
+                        <h1 class="text-[30px] xl:text-[40px] font-[500] mb-[30px] xl:mb-[50px] dark:text-white">Send a
+                            message</h1>
+
+                        <div class="name-mail mb-[25px] flex flex-col xl:flex-row gap-6 xl:gap-[50px]">
+                            <input type="text" placeholder="Full name"
+                                class="text-gray-700 focus:text-black text-[17px] w-full xl:w-[230px] pb-[20px] xl:pb-[30px] outline-none border-b border-b-gray-300 focus:border-b-gray-500 dark:text-[#9ca3a3] dark:focus:text-white dark:border-b dark:border-b-gray-700 dark:focus:border-b-gray-300 bg-transparent">
+                            <input type="email" placeholder="Email address"
+                                class="text-gray-700 focus:text-black text-[17px] w-full xl:w-[230px] pb-[20px] xl:pb-[30px] outline-none border-b border-b-gray-300 focus:border-b-gray-500 dark:text-[#9ca3a3] dark:focus:text-white dark:border-b dark:border-b-gray-700 dark:focus:border-b-gray-300 bg-transparent">
+                        </div>
+
+                        <div class="subject-phone mb-[25px] flex flex-col xl:flex-row gap-6 xl:gap-[50px]">
+                            <input type="text" placeholder="Subject"
+                                class="text-gray-700 focus:text-black text-[17px] w-full xl:w-[230px] pb-[20px] xl:pb-[30px] outline-none border-b border-b-gray-300 focus:border-b-gray-500 dark:text-[#9ca3a3] dark:focus:text-white dark:border-b dark:border-b-gray-700 dark:focus:border-b-gray-300 bg-transparent">
+                            <input type="tel" placeholder="Phone number"
+                                class="text-gray-700 focus:text-black text-[17px] w-full xl:w-[230px] pb-[20px] xl:pb-[30px] outline-none border-b border-b-gray-300 focus:border-b-gray-500 dark:text-[#9ca3a3] dark:focus:text-white dark:border-b dark:border-b-gray-700 dark:focus:border-b-gray-300 bg-transparent">
+                        </div>
+
+                        <textarea placeholder="Message"
+                            class="text-gray-500 focus:text-black text-[17px] mb-[25px] w-full pb-[30px] outline-none border-b border-b-gray-300 focus:border-b-gray-500 dark:text-[#9ca3a3] dark:focus:text-white dark:border-b dark:border-b-gray-700 dark:focus:border-b-gray-300 bg-transparent"></textarea>
+
+                        <div class="checkbox flex items-start gap-[10px]">
+                            <input type="checkbox"
+                                class="mt-1 w-[18px] h-[18px] shrink-0 appearance-none bg-gray-200 dark:bg-gray-600 rounded-[5px] outline-none checked:bg-blue-500 checked:bg-[url('../img/check-mark-svgrepo-com.svg')] checked:bg-center checked:bg-no-repeat checked:bg-[length:12px_12px]">
+                            <p class="text-[15px] xl:text-[17px] text-[#5f5a63]">By clicking Checkbox, you agree to use
+                                our “Form” terms And consent cookie usage in browser.</p>
+                        </div>
+
+                        <button
+                            class="bg-black dark:bg-[#292e45] text-white py-[15px] px-[30px] rounded-[50px] inline-flex items-center justify-center mt-[25px] hover:opacity-80 transition-all cursor-pointer">
+                            <span class="text-[17px]">Send Message</span>
+                            <i class="fa-solid fa-arrow-right ml-[12px]"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="contact-right w-full xl:w-[25%] xl:ml-[150px] z-[1] mb-10 xl:mb-0">
+                    <h1 class="text-[30px] xl:text-[40px] font-[500] mb-6 xl:mb-[50px] dark:text-white  xl:text-left">
+                        Find us</h1>
+                    <div class="space-y-6 xl:text-left">
+                        <div>
+                            <h2 class="text-[20px] font-[500] mb-[5px] dark:text-white">Our Location</h2>
+                            <p class="text-[17px] text-[#b1b6c0]">290 Maryam Springs 260, Paris, France</p>
+                        </div>
+                        <div>
+                            <h2 class="text-[20px] font-[500] mb-[5px] dark:text-white">Email Address</h2>
+                            <a class="text-[17px] text-[#b1b6c0] hover:text-blue-500"
+                                href="mailto:huykien@tailwin.com">huykien@tailwin.com</a>
+                        </div>
+                        <div>
+                            <h2 class="text-[20px] font-[500] mb-[5px] dark:text-white">Phone number</h2>
+                            <a class="text-[17px] text-[#b1b6c0] hover:text-blue-500"
+                                href="tel:+009423346343843">+009423346343843</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blogs pt-[100px] max-w-[1560px] mx-auto">
+            <div class="blogs-content mx-3 xl:mx-15">
+                <div class="wow animate__animated animate__fadeInDown animate__slow">
+                    <div
+                        class="mx-auto mb-[15px] bg-[#edf5ff] max-w-[100px] h-[25px] flex justify-center items-center rounded-[5px] dark:bg-[#1c2136] border-solid border-[1px] border-transparent dark:border-[#2d2f40]">
+                        <span class="text-[12px] font-[500] text-center text-black dark:text-white">NEWS & BLOGS</span>
+                    </div>
+                    <h1
+                        class="intergrations-tittle text-center text-[40px] font-[700] leading-[45px] mb-[15px] text-black dark:text-white">
+                        Latest News & Blogs</h1>
+                    <p class="intergrations-text text-center text-gray-500 text-[15px]">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In convallis tortor <br class="hidden xl:block"> eros. Donec vitae
+                        tortor lacus. Phasellus aliquam ante in maximus.</p>
+                </div>
+                <!-- ------ -->
+                <div
+                    class="blogs-items grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[40px] mt-[80px] items-stretch wow animate__animated animate__fadeIn animate__slow animate__delay-1s">
+                    <div
+                        class="blogs-box shadow-[0_2px_10px_3px_rgba(0,0,0,0.1)] bg-white dark:bg-[#1c2137] p-[15px] rounded-[10px]">
+                        <a href="./blog_detail_1.html"
+                            class="block mb-[30px] overflow-hidden rounded-[10px] relative aspect-[16/9]">
+                            <img src="../img/image_4.png" alt=""
+                                class="rounded-[10px] absolute w-full h-full object-cover inset-0 transition-transform duration-300 ease-out hover:scale-110">
+                        </a>
+                        <a href="./blog_detail_1.html"
+                            class="text-[25px] font-[500] mb-[15px] block ml-[10px] hover:text-blue-500 transition-all duration-[0.2s] dark:text-white">Exploring
+                            MERN Stack: <br class="hidden xl:block"> Powering Modern We...</a>
+                        <p class="text-[17px] text-[#6a7286] ml-[10px] line-clamp-3">In the world of web development,
+                            staying ahead of the curve is crucial. One <br class="hidden xl:block"> technology stack
+                            that ha</p>
+                    </div>
+
+                    <div
+                        class="blogs-box shadow-[0_2px_10px_3px_rgba(0,0,0,0.1)] bg-white dark:bg-[#1c2137] p-[15px] rounded-[10px]">
+                        <a href="./blog_detail_2.html"
+                            class="block mb-[30px] overflow-hidden rounded-[10px] relative aspect-[16/9]">
+                            <img src="../img/image_6.png" alt=""
+                                class="bg-no-repeat bg-center rounded-[10px] transition-transform duration-300 ease-out hover:scale-110 object-center inset-0 absolute w-full h-full">
+                        </a>
+                        <a href="./blog_detail_2.html"
+                            class="text-[25px] font-[500] mb-[15px] block ml-[10px] hover:text-blue-500 transition-all duration-[0.2s] dark:text-white">Best
+                            UI components for <br class="hidden xl:block"> modern website...</a>
+                        <p class="text-[17px] text-[#6a7286] ml-[10px] line-clamp-3">Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat</p>
+                    </div>
+
+                    <div
+                        class="blogs-box shadow-[0_2px_10px_3px_rgba(0,0,0,0.1)] bg-white dark:bg-[#1c2137] p-[15px] rounded-[10px] md:col-span-1 xl:col-span-1">
+                        <a href="./blog_detail_3.html"
+                            class="block mb-[30px] overflow-hidden rounded-[10px] aspect-[16/9] relative">
+                            <img src="../img/image_11.png" alt=""
+                                class="rounded-[10px] object-center transition-transform duration-300 ease-out hover:scale-110 absolute w-full h-full inset-0">
+                        </a>
+                        <a href="./blog_detail_3.html"
+                            class="text-[25px] font-[500] mb-[15px] block ml-[10px] hover:text-blue-500 transition-all duration-[0.2s] dark:text-white">The
+                            Power of UI/UX: br
+                            Elevating Digital Ex...</a>
+                        <p class="text-[17px] text-[#6a7286] ml-[10px] line-clamp-3">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
     <!-- 1c2136 -->
-    <footer class=" border-t border-gray-300 dark:border-gray-700 mt-100">
-        <div class="px-[4%] pt-20 w-full bg-white dark:bg-[#1c2136]">
-            <div class="grid grid-cols-1  gap-5 lg:py-8 lg:grid-cols-5">
-                <div class="lg:col-span-2">
+    <footer class=" border-t border-gray-300 dark:border-gray-700 mt-20 bg-white dark:bg-[#1c2136]">
+        <div class="px-3 xl:px-8 pt-20 max-w-[1560px] mx-auto">
+            <div class="grid grid-cols-1 gap-5 xl:py-8 lg:grid-cols-3">
+                <div>
                     <a href="../html/index.html" class="flex items-center space-x-3 mb-6 rtl:space-x-reverse">
                         <img src="../img/logo-light.svg" class="h-6.5 dark:hidden" alt="Flowbite Logo">
                         <img src="../img/logo-dark.svg" class="h-6.5 hidden dark:block" alt="Flowbite Logo">
@@ -485,87 +1021,89 @@
                     <h1 class="mt-8 tracking-[5px] text-sm text-gray-400 mb-1">CONTACT</h1>
                     <a href="#" class="text-black dark:text-white font-medium text-[26px]">hello@solid.com</a>
                 </div>
-                <div>
-                    <h2 class="mb-8 font-medium text-2xl dark:text-white">Quick Links</h2>
-                    <ul class="text-body text-gray-400 list-none">
-                        <li class="mb-4">
-                            <a href="#" class="hover:text-blue-500">Home</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:text-blue-500">Product</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:text-blue-500">Careers</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:text-blue-500">Pricing</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-8 font-medium text-2xl dark:text-white">Support</h2>
-                    <ul class="text-body text-gray-400">
-                        <li class="mb-4">
-                            <a href="#" class="hover:text-blue-500">Company</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:text-blue-500">Press media</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:text-blue-500">Our Blog</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:text-blue-500">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-8 font-medium text-2xl dark:text-white">Newsletter</h2>
-                    <ul class="text-body text-gray-400">
-                        <li class="mb-4">
-                            <p>Subscribe to receive future updates</p>
-                        </li>
-                        <li class="mb-4">
-                            <form class="max-w-lg mx-auto">
-                                <label for="email"
-                                    class="block mb-2.5 text-sm font-medium text-heading sr-only">Search</label>
-                                <div class="relative">
-                                    <input type="email" id="email"
-                                        class="block w-full p-3 rounded-[25px] border-gray-800 focus:outline-blue-700 outline dark:outline-gray-700  outline-gray-200 shadow-sm placeholder:text-sm dark:bg-[#181C31]"
-                                        placeholder="Email Adress" required />
-                                    <button type="submit" onclick="document.getElementById('search').focus()"
-                                        class="absolute right-2 top-2.5 text-gray-400 cursor-pointer  text-xs px-3 py-1.5 ">
-                                        <svg class="fill-[#757693] hover:fill-blue-600 dark:fill-white" width="20"
-                                            height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_48_1487)">
-                                                <path
-                                                    d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
-                                                    fill=""></path>
-                                            </g>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </form>
-                        </li>
-                    </ul>
+                <div class="grid md:grid-cols-3 grid-cols-1 lg:col-span-2">
+                    <div>
+                        <h2 class="mb-8 font-medium text-2xl dark:text-white">Quick Links</h2>
+                        <ul class="text-body text-gray-400 list-none">
+                            <li class="mb-4">
+                                <a href="#" class="hover:text-blue-500">Home</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:text-blue-500">Product</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:text-blue-500">Careers</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:text-blue-500">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-8 font-medium text-2xl dark:text-white">Support</h2>
+                        <ul class="text-body text-gray-400">
+                            <li class="mb-4">
+                                <a href="#" class="hover:text-blue-500">Company</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:text-blue-500">Press media</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:text-blue-500">Our Blog</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:text-blue-500">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-8 font-medium text-2xl dark:text-white">Newsletter</h2>
+                        <ul class="text-body text-gray-400">
+                            <li class="mb-4">
+                                <p>Subscribe to receive future updates</p>
+                            </li>
+                            <li class="mb-4">
+                                <form class="max-w-xl mx-auto">
+                                    <label for="email"
+                                        class="block mb-2.5 text-sm font-medium text-heading sr-only">Search</label>
+                                    <div class="relative">
+                                        <input type="email" id="email"
+                                            class="block w-full p-3 rounded-[25px] border-gray-800 focus:outline-blue-700 outline dark:outline-gray-700  outline-gray-200 shadow-sm placeholder:text-sm dark:bg-[#181C31]"
+                                            placeholder="Email Adress" required />
+                                        <button type="submit" onclick="document.getElementById('search').focus()"
+                                            class="absolute right-2 top-2.5 text-gray-400 cursor-pointer  text-xs px-3 py-1.5 ">
+                                            <svg class="fill-[#757693] hover:fill-blue-600 dark:fill-white" width="20"
+                                                height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_48_1487)">
+                                                    <path
+                                                        d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
+                                                        fill=""></path>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div
-                class="py-8 mx-4 border-t-gray-200 dark:border-t-gray-800 border-t-[0.5px] mt-14 bg-neutral-secondary-soft lg:flex lg:items-center lg:justify-between">
+                class="py-8 mx-4 border-t-gray-200 dark:border-t-gray-800 border-t-[0.5px] mt-14 bg-neutral-secondary-soft xl:flex xl:items-center xl:justify-between">
                 <div>
-                    <ul class="flex gap-8 justify-center lg:justify-start pb-5 lg:pb-0">
+                    <ul class="flex gap-8 justify-center xl:justify-start pb-5 xl:pb-0">
                         <li class=""><a href="#" class="text-gray-400 hover:text-blue-500">English</a></li>
                         <li class=""><a href="#" class="text-gray-400 hover:text-blue-500">Privacy Policy</a></li>
                         <li class=""><a href="#" class="text-gray-400 hover:text-blue-500">Support</a></li>
                     </ul>
                 </div>
                 <span
-                    class=" flex justify-center lg:justify-start lg:pb-0 text-base text-body sm:text-center lg:text-center text-gray-400">©
+                    class=" flex justify-center xl:justify-start xl:pb-0 text-base text-body sm:text-center xl:text-center text-gray-400">©
                     2026 Solid. All Rights
                     Reserved.
                 </span>
-                <div class="flex mt-4 justify-center lg:mt-0 space-x-2 rtl:space-x-reverse">
+                <div class="flex mt-4 justify-center xl:mt-0 space-x-2 rtl:space-x-reverse">
                     <ul class="flex gap-5">
                         <li>
                             <a href="#">
@@ -639,7 +1177,82 @@
             </div>
         </div>
     </footer>
+    <a href="#" class="z-[10] boxmin-a cd-top text-replace js-cd-top 
+          fixed bottom-[20px] right-[20px] p-[15px] rounded-[10px]
+          bg-[#5f8ff5] text-white no-underline
+          opacity-0 invisible transition-all duration-500
+          hover:opacity-100
+          [&.cd-top--is-visible]:visible [&.cd-top--is-visible]:opacity-100
+          [&.cd-top--fade-out]:opacity-90">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- back-to-top -->
+    <script src="../lib/back to top/util.js"></script>
+    <script src="../lib/back to top/main.js"></script>
+    <a href="#" class="z-[10] boxmin-a cd-top text-replace js-cd-top 
+          fixed bottom-[20px] right-[20px] p-[15px] rounded-[10px]
+          bg-[#5f8ff5] text-white no-underline
+          opacity-0 invisible transition-all duration-500
+          hover:opacity-100
+          [&.cd-top--is-visible]:visible [&.cd-top--is-visible]:opacity-100
+          [&.cd-top--fade-out]:opacity-90">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- back-to-top -->
+    <script src="../lib/back to top/util.js"></script>
+    <script src="../lib/back to top/main.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick script -->
+    <script src="../lib/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".testimonials-slider").slick({
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false,
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+                mobileFirst: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <!-- wow JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <!-- flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <!-- main -->
     <script src="../js/index.js"></script>
+
 </body>
 
 </html>
