@@ -1965,6 +1965,11 @@
       background-image: url('../img/check-mark-svgrepo-com.svg');
     }
   }
+  .checked\:bg-\[url\(\'\.\/img\/check-mark-svgrepo-com\.svg\'\)\] {
+    &:checked {
+      background-image: url('./img/check-mark-svgrepo-com.svg');
+    }
+  }
   .checked\:bg-\[length\:12px_12px\] {
     &:checked {
       background-size: 12px 12px;
@@ -2799,9 +2804,9 @@
       background-color: transparent;
     }
   }
-  .xl\:bg-\[url\(\.\.\/img\/shape-dotted-light\.svg\)\] {
+  .xl\:bg-\[url\(\.\/img\/shape-dotted-light\.svg\)\] {
     @media (width >= 80rem) {
-      background-image: url(../img/shape-dotted-light.svg);
+      background-image: url(./img/shape-dotted-light.svg);
     }
   }
   .xl\:p-0 {
@@ -3652,10 +3657,10 @@
       }
     }
   }
-  .xl\:dark\:bg-\[url\(\.\.\/img\/shape-dotted-dark\.svg\)\] {
+  .xl\:dark\:bg-\[url\(\.\/img\/shape-dotted-dark\.svg\)\] {
     @media (width >= 80rem) {
       &:where(.dark, .dark *) {
-        background-image: url(../img/shape-dotted-dark.svg);
+        background-image: url(./img/shape-dotted-dark.svg);
       }
     }
   }
