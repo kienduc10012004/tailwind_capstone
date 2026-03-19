@@ -1,4 +1,4 @@
-/*! tailwindcss v4.2.1 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.2.2 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -338,12 +338,6 @@
   }
   .bottom-\[20px\] {
     bottom: 20px;
-  }
-  .bottom-\[50px\] {
-    bottom: 50px;
-  }
-  .bottom-\[70px\] {
-    bottom: 70px;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -987,9 +981,6 @@
   .rounded-\[50px\] {
     border-radius: 50px;
   }
-  .rounded-\[px\] {
-    border-radius: px;
-  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -1123,9 +1114,6 @@
   }
   .bg-\[\#F3F4F6\] {
     background-color: #F3F4F6;
-  }
-  .bg-\[\#FAFAFB\] {
-    background-color: #FAFAFB;
   }
   .bg-\[\#edf5ff\] {
     background-color: #edf5ff;
@@ -1796,13 +1784,6 @@
       opacity: 100%;
     }
   }
-  .peer-hover\:visible {
-    &:is(:where(.peer):hover ~ *) {
-      @media (hover: hover) {
-        visibility: visible;
-      }
-    }
-  }
   .peer-focus\:visible {
     &:is(:where(.peer):focus ~ *) {
       visibility: visible;
@@ -2383,11 +2364,6 @@
       display: block;
     }
   }
-  .lg\:w-\[100\%\] {
-    @media (width >= 64rem) {
-      width: 100%;
-    }
-  }
   .lg\:w-\[600px\] {
     @media (width >= 64rem) {
       width: 600px;
@@ -2451,11 +2427,6 @@
   .xl\:top-\[55\%\] {
     @media (width >= 80rem) {
       top: 55%;
-    }
-  }
-  .xl\:right-0 {
-    @media (width >= 80rem) {
-      right: calc(var(--spacing) * 0);
     }
   }
   .xl\:bottom-0 {
@@ -2571,11 +2542,6 @@
   .xl\:mb-0 {
     @media (width >= 80rem) {
       margin-bottom: calc(var(--spacing) * 0);
-    }
-  }
-  .xl\:mb-1 {
-    @media (width >= 80rem) {
-      margin-bottom: calc(var(--spacing) * 1);
     }
   }
   .xl\:mb-15 {
